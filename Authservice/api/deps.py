@@ -3,9 +3,9 @@ from collections.abc import Generator
 from fastapi import Depends
 from sqlalchemy.orm import Session
 
-from app.db.session import SessionLocal
-from app.repositories.user_repository import UserRepository
-from app.services.auth_service import AuthService
+from Authservice.db.session import SessionLocal
+from Authservice.repositories.user_repository import UserRepository
+from Authservice.services.auth_service import AuthService
 
 
 def get_db() -> Generator[Session, None, None]:

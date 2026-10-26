@@ -1,8 +1,8 @@
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.models.user import User
-from app.schemas.auth import RegisterRequest
+from Authservice.models.user import User
+from python_migrations.Authservice.schemas.requests import RegisterRequest
 
 
 class UserRepository:

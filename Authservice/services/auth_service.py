@@ -1,7 +1,8 @@
-from app.core.security import create_access_token, hash_password, verify_password
-from app.models.user import User
-from app.repositories.user_repository import UserRepository
-from app.schemas.auth import LoginRequest, RegisterRequest, TokenResponse
+from Authservice.core.security import create_access_token, hash_password, verify_password
+from Authservice.models.user import User
+from Authservice.repositories.user_repository import UserRepository
+from python_migrations.Authservice.schemas.requests import LoginRequest, RegisterRequest
+from python_migrations.Authservice.schemas.response import TokenResponse
 
 
 class AuthService:

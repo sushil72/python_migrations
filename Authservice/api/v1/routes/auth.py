@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 
-from app.api.deps import get_auth_service
-from app.schemas.auth import LoginRequest, RegisterRequest, TokenResponse
-from app.schemas.user import UserResponse
-from app.services.auth_service import AuthService
+from Authservice.api.deps import get_auth_service
+from python_migrations.Authservice.schemas.requests import LoginRequest, RegisterRequest
+from python_migrations.Authservice.schemas.response import UserResponse , TokenResponse
+from Authservice.services.auth_service import AuthService
 
 
 router = APIRouter()
